@@ -1,0 +1,67 @@
+
+//default properties for hamburger menu
+$width: 40%
+$height: 3px
+$radius: 2px
+$color: #ff818e
+$trans: all .25s ease-in-out
+
+.hamburger-container
+    width: 60px
+    height: 60px
+    border-radius: 50%
+    background: rgba(white, .8)
+    position: absolute
+    right: 0
+    margin: 8px 24px
+    cursor: pointer
+    transition: $trans
+
+    &.is-open
+        transform: scale(.9)
+        background: white
+        filter: drop-shadow(.5px .5px 2px rgba(#333, .2))
+
+    &:hover
+        background: white
+
+    .hamburger
+        position: relative
+        display: block
+        height: $height
+        width: $width
+        border-radius: $radius
+        background: $color
+        transition: $trans
+        
+        &.is-open
+            background: transparent
+
+            &:after, &:before
+                background: $darkRed
+
+            &:before
+                transform: rotate(-45deg)
+                margin-top: 1px
+
+            &:after
+                transform: rotate(45deg)
+                margin-top: -3px
+
+        &:before, &:after
+            content: ''
+            width: 100%
+            height: $height
+            display: block
+            border-radius: $radius
+            background: $color
+            transition: $trans
+
+        &:after
+            margin-top: 11px
+
+        &:before
+            margin-top: -7px
+
+
+

@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,900')
+
+$red: #FA4057
+$darkRed: #A41224
+$blue: #4A90E2
+$orange: #F5A623
+
+
+body
+    margin: 0
+    font:
+        family: 'Lato', sans-serif
+
+.flex
+    display: flex
+
+.center
+    justify-content: center
+
+.items-center
+    align-items: center
+
+.column
+    flex-direction: column
+
+h1
+    margin: 0
+    padding: 0
+    text-transform: uppercase
+    text-align: center
+    font:
+        family: 'Lato', sans-serif
+        weight: 900
+
+    &.home
+        color: rgba($darkRed, .5)
+        font-size: 120px
+
+h2
+    margin: 0
+    padding: 0
+    text-transform: uppercase
+    text-align: center
+
+    &.home
+        //width: 60vw
+        display: inline-block
+        margin: auto
+        color: $darkRed
+        letter-spacing: 8px
+        border-top: 1px solid $darkRed
+        border-bottom: 1px solid $darkRed
+        font:
+            size: 40px
+            weight: 300
+
+    
+    
+
+
+        // position: relative
+        // top: 60vh

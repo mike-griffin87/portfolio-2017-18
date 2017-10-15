@@ -1,0 +1,46 @@
+.home-container
+    background:
+        image: url('../src/img/home-bg.png')
+        size: cover
+        position: center center
+    width: 100vw
+    height: 100vh
+    display: block
+
+    header
+        position: relative
+        top: 50vh
+
+nav
+    margin-top: 32px
+    ul
+        list-style: none
+        margin: 32px 0
+        padding: 0
+
+        li
+            display: inline-block
+            padding: 4px 16px
+
+            a
+                text-decoration: none
+                font:
+                    size: 22px
+                color: white
+                position: relative
+                transition: all .25s ease-in-out
+
+                &:hover
+                    color: $darkRed
+
+                &.white
+                    &:after
+                        background: white
+
+                &.blue
+                    &:after
+                        background: $blue
+
+                &.orange
+                    &:after
+                        background: $orange
